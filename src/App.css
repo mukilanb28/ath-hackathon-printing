@@ -36,3 +36,167 @@
     transform: rotate(360deg);
   }
 }
+
+/*Dashboard styles start*/
+.dashboard-layer{
+  margin:10px;
+  width:100%;
+}
+.dashboard-layer > div{
+  /* margin:1px; */
+}
+.container {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+}
+.container-flex-column{
+  
+	display: flex;
+	flex-direction: column;
+  margin:0 5px 5px 0px;
+}
+.container-flex-row{
+  flex-direction: row;
+}
+
+
+.container .flex-row{
+}
+.container .flex-column{
+  width: 100%;
+}
+
+.header{
+  height: 50vh;
+  width:inherit;
+  flex: 1;
+  border: 1px solid black;
+  padding: 10px 0 0px 0;
+  background-color: #71579b;
+}
+.content-pane{
+  flex:2;
+  margin-top:5px;
+}
+
+
+.docview{
+  max-height: inherit;
+  overflow: scroll;
+}
+.labelview{
+  max-height: inherit;
+  overflow: auto;
+  min-height: 84vh;
+}
+.labelview .label-view-layer, .labelview .card-view-layer{
+  flex:2;
+}
+.labelview .card-view-layer{
+  box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
+}
+.header-dropdown-pane > div{
+  padding-left:10px;
+}
+
+.dropdown-content{
+  float: left;
+  margin-left: 10px;
+  width: 95%;
+}
+.dropdown-content > div{
+  vertical-align: middle;
+  font-size: 20px;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dropdown-content > div > div > div{
+  display: inline-block;
+  vertical-align: middle;
+}
+.label-layer{
+  margin: 0px 50px 0px 25px;
+}
+.cardview-layer li{
+  padding: 5px 15px 10px 15px;
+}
+
+
+.header-dropdown-pane > div{
+  min-width: 200px;
+  padding-left: 20px;
+}
+.labelview >  div{
+  margin:1px;
+  justify-content: space-around;
+}
+.content-pane > div{
+  max-height:85vh;
+  overflow: hidden;
+}
+.footer-pane{
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #939292;
+  padding: auto;
+}
+.footer-pane > div{
+  margin-left: 600px;
+}
+.empty-doc-msg{
+  padding-top: 10%;
+}
+.empty-doc .docview, .loader-enabled .docview{
+  overflow: hidden;
+}
+.empty-doc .labelview, .loader-enabled .labelview{
+  border-left: 1px solid black;
+}
+.bulb-icon{
+  padding: 10px;
+}
+.loader-enabled{
+  /* padding: 100px; */
+}
+.header .select__control{
+  font-size: 13px;
+}
+
+div::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+div::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 6px;
+}
+
+div::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.dashboard-view > div{
+  margin:0 0 0 5px;
+}
+.select__menu{
+  font-size: 14px;
+}
+html{
+  overflow: hidden;
+}
+.footer-pane .MuiButtonBase-root{
+  background-color: #1565c0;
+  padding: 2px 40px;
+}
+.dropdown-content > div > div{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-holder-layer{
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  padding: 5px;
+  margin: 5px;
+}
+/*Dashboard styles end*/
